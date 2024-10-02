@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: rgb(92, 231, 150);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 65px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+        }
+
+        .menu-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-buttons a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 60%;
+            margin-right: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #333;color: #fff;border: none;border-radius: 5px;padding: 10px;cursor: pointer;font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+    </style>
+    <title>Search Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-buttons">
+            <a href="index.html"><img src="images/logo.png" alt="logo" style="height: 60px; width: 90px; margin-right: 20px;"></a>
+            <a href="index.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="courses.html">Courses</a>
+            <a href="your_cart.html">Your Cart</a>
+            <a href="login_page.html">Log in</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for products...">
+            <button onclick="search()">Search</button>
+        </div>
+    </header>
+
+    <div class="container">
+    </div>
+
+    <script>
+        function search() {
+            const searchTerm = document.getElementById('searchInput').value;
+            alert(`Searching for: ${searchTerm}`);
+        }
+    </script>
+</body>
+
+</html>
