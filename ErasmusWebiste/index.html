@@ -24,16 +24,31 @@
         <img style="background-color: rgb(92, 231, 150); position:fixed;left: 0px;top: 0px;width:100%;height:65px;">
         <header>
             <header>
-                <a href="index.html"><img src="images/TestLogo.png" alt="logo" style="height: 100px; width: 100px; position: fixed;left: 2px;top: 2px;"></a>
-                <a href="index.html"><button style="position: fixed;left: 100px;top: 10px;height: 45px;width: 150px;">Home</button></a>
-                <a href="news.html"><button style="position: fixed;left: 260px;top: 10px;height: 45px;width: 150px;">News</button></a>
-                <a href="abtUs.html"><button style="position: relative;left: 22%;top: 15%;height: 45px;width: 150px;">About us</button></a>
-                <a href="login_page.html"><img src="images/EmptyPfp.png" alt="logo" style="height: 150%; width: 5%; position: relative;left: 95%;top: -100%;"></a>
-                <div class="search-bar">
-                    <input style="position: fixed;left: 1300px;width: 400px;top: 13px;" type="text" id="searchInput" placeholder="Search for products...">
-                    <button style="background-color: rgb(92, 231, 178);color: rgb(0, 0, 0);border: none;border-radius: 5px;padding: 10px;cursor: pointer;font-size: 17px;position: fixed;top: 13px;left: 1730px;" onclick="search()">Search</button>
-                </div>        
-            </header>
+                <a href="index.html">
+                    <img src="images/TestLogo.png" alt="logo" style="height: 100px; width: 100px; position: fixed; left: 2px; top: 2px;">
+                </a>
+                <div class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="news.html">News</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">About Us 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="abtUs.html">About Us</a>
+                            <a href="faq.html">FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                    <a href="login_page.html" style="border-radius: 80px;padding: 0px; position: fixed; top: 13px; left: 1950px; height: 60px; width: 60px; ">
+                        <img src="images/EmptyPfp.png" alt="profile" style="height: 60px; width: 60px;">
+                    </a>
+                    <div class="search-bar">
+                        <input style="position: fixed; left: 1300px; width: 400px; top: 13px;" type="text" id="searchInput" placeholder="Search for products...">
+                        <a href="search.html" style="border: none; border-radius: 5px; padding: 10px; cursor: pointer; font-size: 17px; position: fixed; top: 13px; left: 1730px;" onclick="search()">Search</a>
+                    </div>
+                </div>
+            </header>            
             <div class="container">
             </div>
         
@@ -46,7 +61,3 @@
         </header>
 </head>
 </html>
-
-// this is a comment for testing things
-
-//uhgdfgdskgfsdfgsdjgf
