@@ -30,8 +30,8 @@
                     <img src="images/TestLogo.png" alt="logo" style="height: 100px; width: 100px; position: fixed; left: 2px; top: 2px;">
                 </a>
                 <div class="navbar">
-                    <a href="index.html">Home</a>
-                    <a href="news.html">News</a>
+                    <a href="index.html"><span>Home</span></a>
+                    <a href="news.html"><span>News</span></a>
                     <div class="dropdown">
                         <button class="dropbtn">
                             About Us
@@ -42,15 +42,18 @@
                             <a href="contact.html">Contact Us</a>
                         </div>
                     </div>
-                    <a href="login_page.html" style="border-radius: 80px;padding: 0px; position: fixed; top: 13px; left: 1950px; height: 60px; width: 60px; ">
-                        <img src="images/EmptyPfp.png" alt="profile" style="height: 60px; width: 60px;">
+                    <a href="login_page.html" style="border-radius: 80px;padding: 0px; position: fixed; top: 9px; left: 1950px; height: 65px; width: 65px; ">
+                        <img src="images/EmptyPfp.png" alt="profile" style="height: 65px; width: 65px;">
                     </a>
                     <div class="search-bar">
-                        <input style="position: fixed; left: 1300px; width: 400px; top: 13px;" type="text" id="searchInput" placeholder="Search for products...">
-                        <a href="search.html" style="border: none; border-radius: 5px; padding: 10px; cursor: pointer; font-size: 25px; position: fixed; top: 13px; left: 1730px;" onclick="search()">Search</a>
+                        <input style="position: fixed; left: 1350px; width: 400px; top: 13px;border-radius: 100px;font-size: 20px;" type="text" id="searchInput" placeholder="Search for products...">
+                        <a href="search.html" class="search-glass" style="border-radius: 14px; padding: 0px; position: fixed; top: 20px; left: 1730px; height: 30px; width: 30px;" onclick="search()">
+                            <img src="images/magnifying-glass.webp" style="height: 28px;width: 28px;" alt="⌕">
+                        </a>
+                        <a href="search.html" style="border: none; border-radius: 10px; padding: 10px; cursor: pointer; font-size: 25px; position: fixed; top: 13px; left: 1780px; width: 100px;" onclick="search()">Search</a>
                     </div>
                 </div>
-            </header>            
+            </header> 
             <div class="container">
             </div>
         
@@ -58,6 +61,7 @@
                 function search() {
                     const searchTerm = document.getElementById('searchInput').value;
                     alert(`Searching for: ${searchTerm}`);
+                    document.getElementById('searchInput').value = "";
                 }   
             </script>
         </header>
