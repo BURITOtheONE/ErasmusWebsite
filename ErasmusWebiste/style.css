@@ -63,7 +63,7 @@ h1 {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     box-sizing: border-box;
     font-size: 16px;
 }
@@ -81,7 +81,7 @@ button[type="submit"] {
     background-color: rgb(92, 231, 178);
     color: black;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
 }
@@ -125,7 +125,7 @@ input[type="text"] {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    min-width: 100px;
+    min-width: 0px;
   }
   
   .dropdown {
@@ -144,7 +144,7 @@ input[type="text"] {
     font-family: inherit;
     margin: 0;
     z-index: 10000;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
