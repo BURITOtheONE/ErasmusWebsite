@@ -1,11 +1,9 @@
 /* General Styles */
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Courier New', Courier, monospace;
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
+body {
   background-color: #f0f0f0;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -76,9 +74,6 @@ input[type="text"] {
 .container {
   margin: 20px auto;
   max-width: 800px;
-  width: 100%;
-  flex: 1;
-  flex-direction: column;
 }
 
 .signup-box {
@@ -101,11 +96,10 @@ input[type="text"] {
 header {
   background-color: rgb(100, 100, 100);
   height: 80px;
-  position: relative;
   left: 0;
-  top: 0;
   overflow: visible;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 9998;
 }
@@ -121,8 +115,6 @@ header a {
   overflow: visible;
   position: absolute;
   z-index: 9999;
-  max-width: 1200px; /* Set a max width for the navbar */
-  margin: 0 auto; /* Center horizontally */
 }
 
 .navbar a {
@@ -139,10 +131,10 @@ header a {
 }
 
 .navbar a::after {
-  background-color: rgb(60, 60, 60);
+  background-color: rgb(65, 65, 65);
   bottom: 0;
   content: '';
-  height: 3px;
+  height: 5px;
   left: 50%;
   position: absolute;
   transition: width 0.25s ease, left 0.2s ease;
@@ -255,6 +247,7 @@ header a {
   color: black;
   display: block;
   float: none;
+  height: 80px;
   padding: 12px 16px;
   text-align: left;
   text-decoration: none;
@@ -272,28 +265,4 @@ header a {
 .dropdown:hover .dropdown-content {
   display: block;
   z-index: 10002;
-}
-
-/* Footer Styles */
-footer {
-  background-color: rgb(60, 60, 60);
-  width: 100%; /* Full width */
-  z-index: 10003;
-  height: 300px;
-  margin-top: auto;
-}
-
-footer p {
-  color: aliceblue;
-
-}
-
-footer a{
-  text-decoration: underline;
-  text-decoration-color: aliceblue;
-}
-
-.footer-container {
-  max-width: 1200px; /* Set a max width for the footer */
-  margin: 0 auto; /* Center horizontally */
 }
