@@ -266,3 +266,82 @@ header a {
   display: block;
   z-index: 10002;
 }
+
+/* Dropdown 2*/
+.dropdown2 {
+  float: left;
+  overflow: hidden;
+  z-index: 10000;
+}
+
+.dropdown2 .dropbtn2 {
+  background-color: inherit;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: inherit;
+  font-size: 30px;
+  margin: 0;
+  outline: none;
+  padding: 14px 16px;
+  z-index: 10000;
+}
+
+.dropdown2 .dropbtn2::after {
+  background-color: rgb(65, 65, 65);
+  bottom: 0px;
+  content: '';
+  height: 5px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.25s ease, left 0.2s ease;
+  width: 0;
+}
+
+.dropdown2:hover .dropbtn2::after {
+  left: 0;
+  width: 100%;
+}
+
+.dropdown2:hover .dropbtn2 {
+  background-color: red;
+  z-index: 10000;
+}
+
+/* Dropdown Content 2*/
+.dropdown-content2 {
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: none;
+  min-width: 200px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10001;
+}
+
+.dropdown-content2 a {
+  border-bottom: 3px solid transparent;
+  box-sizing: border-box;
+  color: black;
+  display: block;
+  float: none;
+  height: 50px;
+  padding: 12px 16px;
+  text-align: left;
+  text-decoration: none;
+  transition: border-bottom 0.4s;
+  z-index: 10000;
+}
+
+.dropdown-content2 a:hover {
+  background-color: #ddd;
+  border-bottom: rgb(65, 65, 65);
+  border-radius: 15px;
+  z-index: 10001;
+}
+
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+  z-index: 10002;
+}
