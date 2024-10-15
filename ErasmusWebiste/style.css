@@ -96,6 +96,7 @@ input[type="password"] {
   max-width: 500px;
   height: 400px;
   padding: 20px;
+  position: relative;
 }
 
 .right-box {
