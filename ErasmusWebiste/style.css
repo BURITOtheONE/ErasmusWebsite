@@ -131,6 +131,7 @@ header a {
   background-color: rgb(100, 100, 100);
   overflow: visible;
   position: absolute;
+
   user-select: none;
   z-index: 9999;
 }
@@ -231,7 +232,7 @@ header a {
   margin: 0;
   outline: none;
   padding: 14px 16px;
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .dropdown .dropbtn::after {
