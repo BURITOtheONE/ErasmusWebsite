@@ -11,6 +11,40 @@ body {
   justify-content: center;
 }
 
+.main_content {
+  background-color: rgb(100, 100, 100);
+  display: flex; /* Use flexbox for layout */
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  overflow: visible;
+  position: relative;
+  max-width: 1100px; 
+  width: 100%;
+  height: 5200px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+h1 {
+  color: #333;
+  font-style: oblique;
+  margin-top: 80px;
+  text-align: center;
+}
+
+label {
+  width: 133.33%; /* Adjust width to compensate for scaling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
 img {
   display: block;
   height: auto;
@@ -88,18 +122,15 @@ input[type="password"] {
 
 
 /* Layout and Containers */
-.container {
-  margin: 20px auto;
-  max-width: 800px;
-}
 
 .signup-box {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
-  max-width: 500px;
-  height: 400px;
+  top: 100px;
+  max-width: 800px;
+  height: 600px;
   padding: 20px;
   position: relative;
   user-select: none;
@@ -181,7 +212,7 @@ header a {
 
 
 /* Search Bar */
-.search-bar {
+.search_bar {
   margin-bottom: 20px;
   margin-top: 65px;
   text-align: center;
@@ -190,7 +221,7 @@ header a {
   margin: 20px 0;
 }
 
-.navbar .search-bar a {
+.navbar .search_bar a {
   font-size: inherit;
   height: 25px;
   min-width: 0px;
@@ -199,11 +230,11 @@ header a {
   width: 25px;
 }
 
-.navbar .search-bar a:hover img {
+.navbar .search_bar a:hover img {
   transform: rotateY(180deg);
 }
 
-.navbar .search-bar a img {
+.navbar .search_bar a img {
   transition: transform 0.4s ease;
 }
 /*End of Search Bar */
@@ -211,24 +242,46 @@ header a {
 
 
 /* Search Glass Hover & Effects */
-.navbar .search-glass {
+.navbar .search_glass {
   height: 25px;
   margin: 0;
   padding: 0;
   width: 25px;
 }
 
-.navbar .search-glass:hover {
+.navbar .search_glass:hover {
   background: none;
-  color: white;
-  text-decoration: none;
 }
 
-.navbar .search-glass::after {
+.navbar .search_glass::after {
   content: none;
 }
 /* End Of Search Glass Hover & Effects */ 
 
+/*  Profile Picture Hover & Effects */ 
+.dropdown .profile_picture {
+  padding: 0;
+  border-radius: 0px;
+  text-decoration:  none;
+  transition: transform 0.7s, box-shadow 0.3s;
+
+}
+
+.dropdown .profile_picture:hover, .dropdown:hover .profile_picture  {
+  transform: rotate(360deg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+  border-radius: 80px;
+  background-color: red;
+}
+.dropdown .profile_picture:not(:hover) {
+  border-radius: 80px;
+}
+
+.dropdown .profile_picture::after{
+  content: none;
+}
+
+/* End Of Profile Picture Hover & Effects */ 
 
 /* Dropdown */
 .dropdown {
@@ -424,3 +477,19 @@ header a {
   padding: 10px;
 }
 
+/* End of Language Menu */
+
+/* Footer */
+
+footer {
+  background-color: rgb(100, 100, 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1800px;
+  width: 100%;
+  position: relative; 
+  margin: 0 auto; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
